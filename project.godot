@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-MvnTracker="*res://addons/godot_mvn_tracker/mvn_tracker.gd"
+MvnPlugin="*res://addons/godot_mvn_tracker/mvn_plugin.gd"
 
 [editor_plugins]
 

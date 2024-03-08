@@ -54,8 +54,8 @@ func _enter_tree():
 
 	# Register our autoload user settings object
 	add_autoload_singleton(
-			"MvnTracker",
-			"res://addons/godot_mvn_tracker/mvn_tracker.gd")
+			"MvnPlugin",
+			"res://addons/godot_mvn_tracker/mvn_plugin.gd")
 
 
 func _exit_tree():

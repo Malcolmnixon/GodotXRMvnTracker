@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://i7q25eljiwhw"]
+
+[ext_resource type="Script" path="res://addons/godot_mvn_tracker/mvn_tracker.gd" id="1_k6gtg"]
+
+[node name="MvnTracker" type="Node"]
+script = ExtResource("1_k6gtg")
