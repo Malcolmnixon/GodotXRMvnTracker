@@ -7,6 +7,8 @@
 
 This repository contains an MVN packet decoder for Godot that can drive avatars through the XR Tracker system.
 
+![MVN Preview](/docs/mvn_preview.png)
+
 ## Versions
 
 Official releases are tagged and can be found [here](https://github.com/Malcolmnixon/GodotXRMvnTracker/releases).
