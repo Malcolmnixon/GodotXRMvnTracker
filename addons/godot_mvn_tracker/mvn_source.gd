@@ -79,6 +79,11 @@ func _on_mvn_packet(data : MvnBody.JointData) -> void:
 		var pos := data.positions[native]
 		var rot := data.rotations[native]
 
+		# Skip fingers if no finger-tracking
+		if not data.has_fingers and native >= MvnBody.Joint.LEFT_CARPUS:
+			_body_tracker.set_joint_flags(body, 0)
+			continue
+
 		# If pelvis then consider position calibration
 		if native == MvnBody.Joint.PELVIS:
 			match _position_mode:
