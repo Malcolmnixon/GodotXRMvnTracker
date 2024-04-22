@@ -16,7 +16,7 @@ func _enter_tree() -> void:
 	# Get the body tracker name
 	var body_tracker_name : String = ProjectSettings.get_setting(
 		"mvn_tracker/tracking/body_tracker_name",
-		"/mvn/body")
+		"/mvn/body_tracker")
 
 	# Get the position mode
 	var position_mode = ProjectSettings.get_setting(

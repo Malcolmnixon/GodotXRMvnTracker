@@ -34,7 +34,7 @@ func _enter_tree():
 			TYPE_STRING,
 			PROPERTY_HINT_NONE,
 			"",
-			"/mvn/body")
+			"/mvn/body_tracker")
 
 	# Add position mode
 	_define_project_setting(
