@@ -7,14 +7,14 @@ on:
 jobs:
   build:
     name: Assembling artifacts
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     # Note, to satisfy the asset library we need to make sure our zip files have a root folder
     # this is why we checkout into demo/godot_mvn_tracker
     # and build plugin/godot_mvn_tracker
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: demo/godot_mvn_tracker
       - name: Create Godot MVN Tracker plugin
@@ -29,13 +29,13 @@ jobs:
           rm -rf demo/godot_mvn_tracker/.git
           rm -rf demo/godot_mvn_tracker/.github
       - name: Create Godot MVN Tracker library artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: godot_mvn_tracker
           path: |
             plugin
       - name: Create Godot MVN Tracker demo artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: godot_mvn_tracker_demo
           path: |
